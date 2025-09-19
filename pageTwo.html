@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and seek</title>
+    <link rel="stylesheet" href="/css/two.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="gameOver hide">
+            <div class="line"><p>So close you found 3 princesses, you are taking so much time to find all, do you wanna see where the fourth one is ?</p></div>
+            <a href="/pageThree.html"><button class="go-to-page3" id="go-to-page3">Yessss</button></a>
+        </div>
+
+        <div class="starter">
+            <p class="gameRule">Find all 4 princes before time runs out</p>
+            <p class="btn" type="button">OK</p>
+        </div>
+
+        <div class="timer"><p id="timer" ></p></div>
+
+    </div>
+    
+    <div class="flowers">
+        <img src="/images/flowers.png" alt="flower" class="flower">
+        <img src="/images/flowers.png" alt="flower" class="flower">
+        <img src="/images/flowers.png" alt="flower" class="flower">
+        <img src="/images/flowers.png" alt="flower" class="flower">
+    </div>
+
+    <div class="items pointer-none">
+
+        <div class="first hidden-place">
+            <img src="/images/tree2.png" alt="tree" class="tree">
+            <img src="/images/image1.png" alt="G1" class="girl1 princess" id="girl1">
+        </div>
+
+        <div class="second hidden-place">
+            <img src="/images/cloud.png" alt="cloud" class="cloud">
+            <img src="/images/image2.png" alt="G2" class="girl2 princess" id="girl2">
+        </div>
+
+        <div class="third hidden-place">
+            <img src="/images/snowman.png" alt="snowman" class="snowman">
+            <img src="/images/image3.png" alt="G2" class="girl3 princess" id="girl3">
+        </div>
+
+    </div>
+
+    
+    
+    
+
+
+    <audio id="bg-music" autoplay loop >
+        <source src="/musics/small-happiness-124064.mp3" type="audio/mp3">        
+    </audio>
+
+    <script src="/javaScript/two.js"></script>
+</body>
+</html>

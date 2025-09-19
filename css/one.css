@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+html{
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height:100vh;
+    background: linear-gradient(to bottom, #1d000a 30%, #6e0012);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1.7rem;
+}
+
+h1 {
+    font-family: "Yatra One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(158, 19, 84, 0.719);
+    position: relative;
+    top: 0rem;
+}
+
+p{
+    font-size: large;
+    font-weight: 700;
+    margin: 0.5 0.9rem 0 0.9rem;
+}
+
+.butterfly {
+    height: 7rem;
+    width: 7rem;
+    position: relative;
+    z-index: 100;
+    animation: butterfly 45s infinite linear;
+    opacity: 0.9;
+}
+.butterfly2 {
+    height: 9rem;
+    width: 10rem;
+    position: relative;
+    z-index: 30;
+    animation: butterfly2 55s infinite linear;
+    transform: scaleX(-1);
+    opacity: 0.8;
+}
+@keyframes butterfly {
+    0% {
+        position: relative;
+        top: -25rem;
+        left: 25rem;
+        transform: rotate(20deg);
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+
+    25% {
+        position: relative;
+        top: -26rem;
+        left: 7rem;
+        transform: rotate(-5deg);
+    }
+
+    50%{
+        top: -26rem;
+        left: 7rem;
+        transform: rotate(-5deg);
+        opacity: 1;
+    }
+
+    100%{
+        top: -30rem;
+        left: -35rem;
+        transform: rotate(-15deg);
+        opacity: 0;
+    }
+
+}
+
+@keyframes butterfly2 {
+    0% {
+        top: 20rem;
+        left: -45rem;
+        opacity: 0.2;
+    }
+    50%{
+        top: -5rem;
+        left: -32.5rem;
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        top: -30rem;
+        left: 20rem;
+        opacity: 0;
+    }
+
+}
+
+.cards-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 8rem;
+    width: 6rem;
+    border: 0.3rem solid white;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0.6rem 0.5rem 0.5rem rgb(0, 0, 0) ;
+    background-size: cover;
+}
+
+.row{
+    display: flex;
+}
+
+.card1{
+    background-image: url(/images/card1.jpg.jpg);
+    
+}
+
+.card2{
+    background-image: url(/images/card2\,jpg.jpg);
+}
+
+.card3{
+    background-image: url(/images/card3.jpg.jpg);
+}
+
+.card4{
+    background-image: url(/images/card4\,jpg.jpg);
+}
+
+.clicked{
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+.clicked-card-Out{
+    height: 28rem;
+    width: 20rem;
+    background-image: url(/images/paper2.png);
+    background-size: cover;
+    position: absolute;
+    top: 10rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(10deg);
+      
+}
+
+.hide{
+    display: none;
+}
+
+.line1{
+    height: 5rem;
+    width: 10rem;
+}
+
+.nextPageBtn{
+    margin-top: 1rem;
+    height: 2rem;
+    width: 5rem;
+    border: 0.4rem solid rgb(255, 121, 143);
+    border-radius: 3rem;
+    background-color: rgb(165, 58, 102);
+    box-shadow: 0.5rem 0.5rem 1rem black;
+    padding-top: 0.5rem;
+    color: rgb(255, 242, 219);
+}

@@ -1,0 +1,55 @@
+body{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #000014 30%, #000000);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    height: 100%;
+    width: 100%;
+}
+
+p{
+    color: wheat;
+}
+
+.mayuu{
+    color: aqua;
+}
+
+.mahitalk{
+    color: #80ecffe8;
+}
+
+.Me{
+    color: rgba(255, 255, 227, 0.836) ;
+}
+
+.talk{
+    color: rgb(170, 170, 170);
+}
+
+.story-container{
+    height: 95%;
+    width: 95%;
+    border: 0.1rem solid rgba(70, 181, 255, 0.26);
+    overflow: auto;
+    padding: 0.5rem;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    color: antiquewhite;
+}

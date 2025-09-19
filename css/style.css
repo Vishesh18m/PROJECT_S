@@ -1,0 +1,178 @@
+html{
+    overflow: hidden;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.bubble{
+    top: 5rem;
+    left: -15rem;
+    position: relative;
+    height: 5rem;
+    transform: rotate(45deg);
+    z-index: 1;
+    animation: bubble 30s infinite linear;
+    opacity: 0.6;
+    transform: rotate(0deg);
+}
+
+.bubble1{
+    top: 50rem;
+    right: -5rem;
+    position: absolute;
+    z-index: 5;
+    height: 10rem;
+    opacity: 0.7;
+    animation: bubble1 35s infinite linear;
+    opacity: 0.6;
+    transform: rotate(0deg);
+}
+
+.bubble2{
+    top: -20rem;
+    right: -10rem;
+    position: absolute;
+    z-index: 5;
+    height: 19rem;
+    opacity: 0.9;
+    animation: bubble2 50s infinite linear;
+    transform: rotate(0deg);
+}
+
+.bubble3{
+    top: -8rem;
+    left: 5rem;
+    position: absolute;
+    z-index: 2;
+    height: 9rem;
+    opacity: 0.7;
+    animation: bubble3 20s infinite linear;
+    transform: rotate(0deg);
+}
+
+.bubble4{
+    position: relative;
+    top: 55rem;
+    left: -8rem;
+    height: 19rem;
+    opacity: 0.5;
+    animation: bubble4 45s infinite linear;
+    transform: rotate(0deg);
+}
+
+
+@keyframes bubble {
+    from{
+    }
+    to{
+        top: 35rem;
+        left: 35rem;
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+}
+
+@keyframes bubble1 {
+    from{
+    }
+    to{
+        top: 3rem;
+        right: 50rem;
+        transform: rotate(-200deg);
+        opacity: 0;
+    }
+}
+
+@keyframes bubble2 {
+    from{
+    }
+    to{
+        top: 60rem;
+        right: 60rem;
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes bubble3 {
+    from{
+    }
+    to{
+        top: 20rem;
+        left: 20rem;
+        transform: rotate(200deg);
+        opacity: 0;
+    }
+}
+
+@keyframes bubble4 {
+    from{
+    }
+    to{
+        top: 10rem;
+        left: 20rem;
+        transform: rotate(200deg);
+        opacity: 0;
+    }
+}
+
+.container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.form{
+    height: 10rem;
+    width: 15rem;
+    margin: auto;
+    margin-top: 15rem;
+    background-color: rgba(29, 29, 29, 0.322);
+    border-radius: 1rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    position: relative;
+    z-index: 100;
+}
+
+input[type="text"]{
+    height: 2rem;
+    border-radius: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0.1rem solid rgba(255, 255, 255, 0.247);
+    text-align: center;
+    color: white;
+}
+
+input[type="text"]::placeholder{
+    margin: auto;
+}
+
+#btn{
+    color: #d1d1d1;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 5rem;
+    height: 2rem;
+    background-color: rgba(100, 100, 100, 0.411);
+}
+
+.wrongName{
+    position: relative;
+    z-index: 200;
+    color: rgba(167, 49, 49, 0.938);
+    display: inline;
+    margin-top: 3rem;
+    
+}
