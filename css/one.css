@@ -142,20 +142,20 @@ p{
 }
 
 .card1{
-    background-image: url(./images/card1.jpg.jpg/);
+    background-image: url(./images/card1.jpg.jpg);
     
 }
 
 .card2{
-    background-image: url(./images/card2\,jpg.jpg/);
+    background-image: url(./images/card2\,jpg.jpg);
 }
 
 .card3{
-    background-image: url(./images/card3.jpg.jpg/);
+    background-image: url(./images/card3.jpg.jpg);
 }
 
 .card4{
-    background-image: url(./images/card4\,jpg.jpg/);
+    background-image: url(./images/card4\,jpg.jpg);
 }
 
 .clicked{
@@ -166,7 +166,7 @@ p{
 .clicked-card-Out{
     height: 28rem;
     width: 20rem;
-    background-image: url(./images/paper2.png/);
+    background-image: url(./images/paper2.png);
     background-size: cover;
     position: absolute;
     top: 10rem;
