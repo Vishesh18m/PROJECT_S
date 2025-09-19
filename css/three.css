@@ -22,7 +22,7 @@ body{
     
     width: 100%;
     position: relative;
-    top: rem;
+    top: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +71,7 @@ body{
 .frame{
     height: 20rem;
     width: 80%;
-    background-image: url(/images/3dgirl.png);
+    background-image: url(./images/3dgirl.png/);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

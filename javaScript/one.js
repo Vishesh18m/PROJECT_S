@@ -45,7 +45,7 @@ function showCard(){
 }
 
 function nextPage(){
-    window.location.href="pageTwo.html"
+    window.location.href="./pageTwo.html/";
 }
 
 const audio = document.getElementById("bg-music");

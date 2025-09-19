@@ -6,7 +6,7 @@ let wrongName = document.querySelector("#wrongName");
 function submit(){
     console.log(input.value);
     if(input.value=="Siya" || input.value=="siya"){
-        window.location.href = "pageOne.html";
+        window.location.href = "./pageOne.html/";
     }
     else{
         wrongName.classList.add("wrongName");
