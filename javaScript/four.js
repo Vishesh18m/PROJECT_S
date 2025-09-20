@@ -1,20 +1,22 @@
-let message = "Siya's smile";
+let message = "Siya's smile 😸";
 let ans = "";
 let index = 0;
 let points = 0;
 
 let options = ["Your Kindness😚","Your Big dreams and Hardwork🤠","Flowers in Your Hairs😚","You in Traditional dress with mathe pe choti bindi 🤗"]
 
-const input = document.getElementById("text-input");
+const inputv = document.getElementById("text-input");
 
-input.addEventListener("keydown", function(e) {
-    e.preventDefault(); // stop the real key from appearing
+document.addEventListener("keypress", function(e) {
+    // e.preventDefault(); // stop the real key from appearing
 
     if (index < message.length) {
-        input.value += message[index]; // add the next character
+        inputv.innerText += message[index]; // add the next character
+        console.log(inputv.innerText);
+        
         index++;
         points++;
-        if(points==16){
+        if(points==19){
             crossbtn.classList.remove("hide");
         }
     }
@@ -32,7 +34,7 @@ function changeOption(){
     this.removeEventListener("change",changeOption);
     console.log(points);
     
-    if(points==16){
+    if(points==19){
         crossbtn.classList.remove("hide");
     }
 }
@@ -62,3 +64,8 @@ function showPrize(){
 
 const audio = document.getElementById("bg-music");
 audio.volume = 0.4;
+
+let inputForKeyboard = document.querySelector("#input-for-keyboard");
+inputForKeyboard.addEventListener("click",()=>{
+    inputForKeyboard.classList.add("opacity-none");
+})
