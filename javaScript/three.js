@@ -5,7 +5,7 @@ const audio2 = document.getElementById("firework-music");
 audio2.volume = 0.4;
 
 let btn = document.querySelector("#btn-container");
-let timeleft = 10;
+let timeleft = 15;
 let time = document.querySelector(".time");
 let timer = document.querySelector(".timer");
 

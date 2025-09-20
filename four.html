@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/four.css">
 </head>
 <body>
+    <h1>Pass the test and Win a chance to spin the wheel and get many wishesh and prizes.</h1>
+    <div class="form">
+        <div class="Q1"><h2>Q1. Complete the famous dialog</h2><input type="text" id="text-input"><p>is the secrate of my energy.</p></div>
+        <br>
+        <div class="Q2">
+            <h2>Q2. What are the most adorable things in the world </h2>
+        </div>
+        <div class="options">
+            <label>
+                <input class="checkbox" id="box1" type="checkbox" name="option1" value=""><p id="opt1">Animals</p>
+            </label>
+            <label>
+                <input class="checkbox" id="box2" type="checkbox" name="option1" value=""><p id="opt2">Paris</p>
+            </label>
+            <label>
+                <input class="checkbox" id="box3" type="checkbox" name="option1" value=""><p id="opt3">Flowers</p>
+            </label>
+            <label>
+                <input class="checkbox" id="box4" type="checkbox" name="option1" value=""><p id="opt4">Rose</p>
+            </label>
+        </div>
+    </div>
+
+    <div class="cross hide">X</div>
+
+    <div class="wheel-container">
+        <img src="./images/Removal-376.png" alt="wheel" class="wheel" >
+        <div class="spin-btn">SPIN</div>
+    </div>
+
+
+    <audio id="bg-music" autoplay loop>
+        <source src="./musics/village-15345.mp3" type="audio/mp3">
+    </audio>
     
+    <script src="./javaScript/four.js"></script>
 </body>
 </html>
