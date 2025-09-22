@@ -1,18 +1,18 @@
 let container = document.querySelector(".container");
 
-
+let count = 1;
 
 setTimeout(()=>{
     one();
     setTimeout(()=>{
-        two();
+        one();
         setTimeout(()=>{
-            three();
+            one();
             setTimeout(()=>{
-                four();
-            },100000);
-        },80000);
-    },45000);
+                one();
+            },40000);
+        },40000);
+    },40000);
 },100);
 
     
@@ -24,30 +24,9 @@ setTimeout(()=>{
 
 function one(){
     for(let i = 1 ; i<=7 ; i++){
-        container.children[i].classList.add(`bubble${i}`);
+        container.children[count++].classList.add(`bubble${i}`);
     }
     console.log("one done ");    
-}
-
-function two(){
-    for(let i = 8 ; i<=14 ; i++){
-        container.children[i].classList.add(`bubble${i}`);
-    }
-    console.log("two done ");
-}
-
-function three(){
-    for(let i = 15 ; i<=21 ; i++){
-        container.children[i].classList.add(`bubble${i}`);
-    }
-    console.log("three done ");
-}
-
-function four(){
-    for(let i = 22 ; i<=25 ; i++){
-        container.children[i].classList.add(`bubble${i}`);
-    }
-    console.log("four done ");
 }
 
 
