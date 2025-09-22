@@ -27,7 +27,7 @@ body{
     position: relative;
     transform: rotate(45deg);
     z-index: 1;
-    animation: bubble 30s 1 linear;
+    animation: bubble 30s 1 linear;  /* 30 */
     opacity: 1;
     transform: rotate(0deg);
 }
@@ -38,7 +38,7 @@ body{
     position: absolute;
     z-index: 5;
     opacity: 1;
-    animation: bubble1 35s 1 linear;
+    animation: bubble1 35s 1 linear;  /* 35 */
     opacity: 0.6;
     transform: rotate(0deg);
 }
@@ -49,7 +49,7 @@ body{
     position: absolute;
     z-index: 5;
     opacity: 1;
-    animation: bubble2 50s 1 linear;
+    animation: bubble2 50s 1 linear; /* 50 */
     transform: rotate(0deg);
 }
 
@@ -59,7 +59,7 @@ body{
     left: 0rem;
     z-index: 2;
     opacity: 1;
-    animation: bubble3 20s 1 linear;
+    animation: bubble3 20s 1 linear; /* 20 */
     transform: rotate(0deg);
 }
 
@@ -68,7 +68,7 @@ body{
     top: 49rem;
     left: -8rem;
     opacity: 1;
-    animation: bubble4 30s 1 linear;
+    animation: bubble4 30s 1 linear; /* 30 */
     transform: rotate(0deg);
 }
 
@@ -78,18 +78,18 @@ body{
     position: relative;
     transform: rotate(45deg);
     z-index: 1;
-    animation: bubble5 60s 1 linear;
+    animation: bubble5 60s 1 linear; /* 60 */
     opacity: 1;
     transform: rotate(0deg);
 }
 
 .bubble6{
     top: 45rem;
-    right: -10rem;
+    right: -14rem;
     position: absolute;
     z-index: 5;
     opacity: 1;
-    animation: bubble6 70s 1 linear;
+    animation: bubble6 70s 1 linear; /* 70 */
     transform: rotate(0deg);
 }
 
@@ -99,7 +99,7 @@ body{
     position: absolute;
     z-index: 5;
     opacity: 1;
-    animation: bubble7 90s 1 linear;
+    animation: bubble7 85s 1 linear; /* 90 */
     transform: rotate(0deg);
 }
 
