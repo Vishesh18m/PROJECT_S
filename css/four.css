@@ -1,165 +1,364 @@
 html{
     overflow: hidden;
 }
-body{
+body{ 
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    background: linear-gradient(to bottom, #000000 , #6e0012);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
 }
 
-.form{
-    height: 30rem;
-    width: 20rem;
-    border: 0.2rem solid rgba(255, 255, 255, 0.479);
-    background-color: rgba(44, 44, 44, 0.144);
-    border-radius: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
-
-#text-input{
-    border-bottom: 0.1rem solid white;
-    color: antiquewhite;
-    font-size: 1rem;
-    width: 6.5rem;
-    display: inline;
-}
-p{
-    display: inline;
-    font-size: 1rem;
-    color: antiquewhite;
-}
-
-h2{
-    text-align: center;
-    color: #e40026;
-}
-
-.Q2{
-    color: antiquewhite;
-    display: flex ;
-    flex-direction: column;
-    align-items: center;
-}
-.Q1{
-    display: flex ;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-label{
-    position: relative;
-    left: -0.8rem;
-    margin-bottom: 0.5rem;
-}
-
-.options{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-}
-
-h1{
-    text-align: center;
-    color: rgb(173, 69, 0);
-    position: relative;
-    top: -3rem;
-    font-size: 1.2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.cross{
-    font-size: 2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    background-color: #e40026;
-    height: 3rem;
-    width: 3rem;
-    text-align: center;
-    position: relative;
-    top: -31rem;
-    left: 10rem;
-    border-radius: 50%;
-    align-content: center;
-    z-index: 15;
-}
-
-.wheel-container{
-    position: absolute;
-    top: 15rem;
-    z-index: 5;
-    opacity: 0.1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.showWheel{
-    opacity: 1;
-}
-
-.spin{
-    animation: spin 5s 1 linear ;
-}
-
-@keyframes spin {
-    0%{
-        transform: rotate();
-    }
-
-    100%{
-        transform: rotate(3600deg);
-    }
-    
-}
-
-.spin-btn{
-    height: 3rem;
-    width: 6rem;
-    border: 0.4rem solid rgb(121, 0, 0);
-    border-radius: 3rem;
-    background-color: #ff1c60;
-    box-shadow: 0.5rem 0.5rem 1rem black;
-    margin-top: 2rem;
+.b1{
+    height: 15rem;
+    width: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    font-weight: bolder;
-    color: #ffb6c2;
-}
-
-.hide{
-    display: none;
-    pointer-events: none;
-}
-
-
-#input-for-keyboard{
-    background: none;
-    position: relative;
-    top: -22rem;
-    z-index: 100;
-    border: none;
-}
-
-.opacity-none{
+    top: -20rem;
+    z-index: 1000;
     opacity: 0;
+}
+
+.bubble{
+    top: 5rem;
+    left: -15rem;
+    position: relative;
+    transform: rotate(45deg);
+    z-index: 1;
+    animation: bubble 30s 1 linear;
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.bubble1{
+    top: 50rem;
+    right: -12rem;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    animation: bubble1 35s 1 linear;
+    opacity: 0.6;
+    transform: rotate(0deg);
+}
+
+.bubble2{
+    top: -20rem;
+    right: -10rem;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    animation: bubble2 50s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble3{
+    position: absolute;
+    top: -22rem;
+    left: 0rem;
+    z-index: 2;
+    opacity: 1;
+    animation: bubble3 20s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble4{
+    position: relative;
+    top: 49rem;
+    left: -8rem;
+    opacity: 1;
+    animation: bubble4 30s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble5{
+    top: 5rem;
+    left: -15rem;
+    position: relative;
+    transform: rotate(45deg);
+    z-index: 1;
+    animation: bubble 60s 1 linear;
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.bubble6{
+    top: 50rem;
+    right: -15rem;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    animation: bubble1 70s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble7{
+    top: -20rem;
+    right: -10rem;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    animation: bubble2 100s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble8{
+    top: -12rem;
+    left: 5rem;
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    animation: bubble3 40s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble9{
+    position: relative;
+    top: 55rem;
+    left: -8rem;
+    opacity: 1;
+    animation: bubble4 80s 4 linear;
+    transform: rotate(0deg);
+}
+
+.bubble10{
+    top: 5rem;
+    left: -15rem;
+    position: relative;
+    transform: rotate(45deg);
+    z-index: 1;
+    animation: bubble 30s 1 linear;
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.bubble11{
+    top: 50rem;
+    right: -10rem;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    animation: bubble1 35s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble12{
+    top: -20rem;
+    right: -10rem;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    animation: bubble2 50s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble13{
+    position: absolute;
+    top: -22rem;
+    left: 0rem;
+    z-index: 2;
+    opacity: 1;
+    animation: bubble3 20s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble14{
+    position: relative;
+    top: 49rem;
+    left: -8rem;
+    opacity: 1;
+    animation: bubble4 40s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble15{
+    top: 5rem;
+    left: -15rem;
+    position: relative;
+    transform: rotate(45deg);
+    z-index: 1;
+    animation: bubble 60s 1 linear;
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.bubble16{
+    top: 50rem;
+    right: -5rem;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    animation: bubble1 70s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble17{
+    top: -20rem;
+    right: -10rem;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    animation: bubble2 100s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble18{
+    top: -12rem;
+    left: 5rem;
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    animation: bubble3 40s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble19{
+    position: relative;
+    top: 55rem;
+    left: -8rem;
+    opacity: 1;
+    animation: bubble4 80s 4 linear;
+    transform: rotate(0deg);
+}
+
+.bubble20{
+    top: 50rem;
+    right: -15rem;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    animation: bubble1 35s 1 linear;
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.bubble21{
+    top: -20rem;
+    right: -10rem;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    animation: bubble2 50s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble22{
+    position: absolute;
+    top: -22rem;
+    left: 0rem;
+    z-index: 2;
+    opacity: 1;
+    animation: bubble3 20s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble23{
+    position: relative;
+    top: 49rem;
+    left: -8rem;
+    opacity: 1;
+    animation: bubble4 40s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble24{
+    top: 5rem;
+    left: -15rem;
+    position: relative;
+    transform: rotate(45deg);
+    z-index: 1;
+    animation: bubble 60s 1 linear;
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.bubble25{
+    top: 50rem;
+    right: -5rem;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    animation: bubble1 70s 1 linear;
+    transform: rotate(0deg);
+}
+
+@keyframes bubble {
+    from{
+    }
+    to{
+        top: 35rem;
+        left: 35rem;
+        transform: rotate(18deg);
+    }
+}
+
+@keyframes bubble1 {
+    from{
+    }
+    to{
+        top: 3rem;
+        right: 50rem;
+        transform: rotate(-20deg);
+    }
+}
+
+@keyframes bubble2 {
+    from{
+    }
+    to{
+        top: 60rem;
+        right: 60rem;
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes bubble3 {
+    from{
+    }
+    to{
+        top: 20rem;
+        left: 20rem;
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes bubble4 {
+    from{
+    }
+    to{
+        top: -10rem;
+        left: 18rem;
+        transform: rotate(20deg);
+    }
+}
+
+
+.out-bub{
+    position: absolute;
+    height: 100%;
+    z-index: 10;
+    opacity: 0.4;
+}
+
+.in-dream{
+    position: relative;
+    height: 40%;
+    z-index: 5;
+    border-radius: 5%;
+}
+
+.container{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* this will cut anything going outside */
+}
+
+.wishes{
+    position: absolute;
+    top: 20rem;
+    height: 5rem;
+    color: antiquewhite;
+    opacity: 0.5;
 }
