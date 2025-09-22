@@ -73,33 +73,33 @@ body{
 }
 
 .bubble5{
-    top: 5rem;
-    left: -15rem;
+    top: 15rem;
+    left: -25rem;
     position: relative;
     transform: rotate(45deg);
     z-index: 1;
-    animation: bubble 60s 1 linear;
+    animation: bubble5 60s 1 linear;
     opacity: 1;
     transform: rotate(0deg);
 }
 
 .bubble6{
-    top: 50rem;
-    right: -15rem;
-    position: absolute;
-    z-index: 5;
-    opacity: 1;
-    animation: bubble1 70s 1 linear;
-    transform: rotate(0deg);
-}
-
-.bubble7{
-    top: -20rem;
+    top: 45rem;
     right: -10rem;
     position: absolute;
     z-index: 5;
     opacity: 1;
-    animation: bubble2 100s 1 linear;
+    animation: bubble6 70s 1 linear;
+    transform: rotate(0deg);
+}
+
+.bubble7{
+    top: -25rem;
+    left: 4rem;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    animation: bubble7 90s 1 linear;
     transform: rotate(0deg);
 }
 
@@ -150,6 +150,36 @@ body{
         top: -10rem;
         left: 18rem;
         transform: rotate(20deg);
+    }
+}
+
+@keyframes bubble5 {
+    from{
+    }
+    to{
+        top: 38rem;
+        left: 36rem;
+        transform: rotate(18deg);
+    }
+}
+
+@keyframes bubble6 {
+    from{
+    }
+    to{
+        top: -3rem;
+        right: 45rem;
+        transform: rotate(-20deg);
+    }
+}
+
+@keyframes bubble7 {
+    from{
+    }
+    to{
+        top: 65rem;
+        left: 25rem;
+        transform: rotate(-30deg);
     }
 }
 
