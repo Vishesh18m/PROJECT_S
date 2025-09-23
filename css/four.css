@@ -22,96 +22,83 @@ body{
 }
 
 .bubble0{
-    top: 5rem;
+    top: -15rem;
     left: -15rem;
     position: relative;
     transform: rotate(45deg);
     z-index: 1;
-    animation: bubble 30s 1 linear;  /* 30 */
+    animation: bubble 43s 1 linear;  /* 30 */
     opacity: 1;
     transform: rotate(0deg);
-    border: 0.5rem solid white;
 }
 
 .bubble1{
-    top: 50rem;
-    right: -12rem;
+    top: 24rem;
+    left: -15rem;
     position: absolute;
     z-index: 5;
     opacity: 1;
-    animation: bubble1 35s 1 linear;  /* 35 */
-    opacity: 0.6;
+    animation: bubble1 65s 1 linear;  /* 35 */
+    opacity: 1;
     transform: rotate(0deg);
-    border: 0.5rem solid rgb(255, 0, 0);
 }
 
 .bubble2{
-    top: -20rem;
-    right: -10rem;
+    top: 25rem;
+    left: -15rem;
     position: absolute;
     z-index: 5;
     opacity: 1;
-    animation: bubble2 50s 1 linear; /* 50 */
+    animation: bubble2 30s 1 linear; /* 50 */
     transform: rotate(0deg);
-    border: 0.5rem solid rgb(255, 231, 10);
 }
 
 .bubble3{
     position: absolute;
     top: -22rem;
-    left: 0rem;
+    left: 30rem;
     z-index: 2;
     opacity: 1;
-    animation: bubble3 20s 1 linear; /* 20 */
+    animation: bubble3 23s 1 linear; /* 20 */
     transform: rotate(0deg);
-    border: 0.5rem solid rgb(51, 255, 0);
 }
 
 .bubble4{
     position: relative;
-    top: 49rem;
-    left: -8rem;
+    top: 35rem;
+    left: 8rem;
     opacity: 1;
-    animation: bubble4 30s 1 linear; /* 30 */
+    animation: bubble4 45s 1 linear; /* 30 */
     transform: rotate(0deg);
-    border: 0.5rem solid rgb(0, 60, 255);
 }
 
 .bubble5{
-    top: -19rem;
-    left: -25rem;
+    top: -50rem;
+    left: 18rem;
     position: relative;
     transform: rotate(45deg);
     z-index: 1;
-    animation: bubble5 40s 1 linear; /* 60 */
+    animation: bubble5 60s 1 linear; /* 60 */
     opacity: 1;
     transform: rotate(0deg);
-    border: 0.5rem solid rgb(195, 0, 255);
+   
+
 }
 
 .bubble6{
-    top: 45rem;
-    right: -14rem;
+    top: 10rem;
+    right: 1rem;
     position: absolute;
     z-index: 5;
     opacity: 1;
-    animation: bubble6 70s 1 linear; /* 70 */
-    transform: rotate(0deg);
-    border: 0.5rem solid rgb(0, 247, 255);
-}
-
-.bubble7{
-    top: -25rem;
-    left: 4rem;
-    position: absolute;
-    z-index: 5;
-    opacity: 1;
-    animation: bubble7 85s 1 linear; /* 90 */
+    animation: bubble6 75s 1 linear; /* 70 */
     transform: rotate(0deg);
 }
 
 @keyframes bubble {
     from{
+        height: 10rem;
+        width: 10rem;
     }
     to{
         top: 35rem;
@@ -122,10 +109,12 @@ body{
 
 @keyframes bubble1 {
     from{
+        height: 12rem;
+        width: 12rem;
     }
     to{
-        top: 3rem;
-        right: 50rem;
+        top: 35rem;
+        left: 28rem;
         transform: rotate(-20deg);
     }
 }
@@ -134,28 +123,32 @@ body{
     from{
     }
     to{
-        top: 60rem;
-        right: 60rem;
+        top: -18rem;
+        left: 23rem;
         transform: rotate(-30deg);
     }
 }
 
 @keyframes bubble3 {
     from{
+        height: 16rem;
+        width: 16rem;
     }
     to{
-        top: 20rem;
-        left: 20rem;
+        top: 47rem;
+        left: 2rem;
         transform: rotate(20deg);
     }
 }
 
 @keyframes bubble4 {
     from{
+        height: 9rem;
+        width: 9rem;
     }
     to{
-        top: -10rem;
-        left: 18rem;
+        top: -15rem;
+        left: -18rem;
         transform: rotate(20deg);
     }
 }
@@ -164,14 +157,16 @@ body{
     from{
     }
     to{
-        top: 28rem;
-        left: 36rem;
+        top: 48rem;
+        left: -10rem;
         transform: rotate(18deg);
     }
 }
 
 @keyframes bubble6 {
     from{
+        height: 9rem;
+        width: 9rem;
     }
     to{
         top: -3rem;
@@ -180,7 +175,7 @@ body{
     }
 }
 
-@keyframes bubble7 {
+@keyframes bubbl {
     from{
     }
     to{
