@@ -156,6 +156,8 @@ body{
     background-color: #11cfff1e;
 
     display: flex;
+    flex-direction: column;
+    text-align: center;    
     justify-content: center;
     align-items: center;
 }
@@ -174,6 +176,10 @@ body{
     color: #11cfff;
     font-weight: 900;
     transform: scale(1.2);
+}
+
+h3{
+    color: #11cfff;
 }
 
 a{
