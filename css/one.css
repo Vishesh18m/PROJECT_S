@@ -8,7 +8,7 @@ html{
 }
 body {
     min-height:100vh;
-    background: linear-gradient(to bottom, #1d000a 30%, #6e0012);
+    background: linear-gradient(to bottom, #fff6f6 , #ff6de7);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
