@@ -5,7 +5,7 @@ btn.addEventListener("click", submit);
 let wrongName = document.querySelector("#wrongName");
 function submit(){
     console.log(input.value);
-    if(input.value=="Siya" || input.value=="siya"){
+    if(input.value=="Siya" || input.value=="siya" || input.value=="SIYA"){
         window.location.href = "./pageOne.html";
     }
     else{
