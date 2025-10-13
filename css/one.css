@@ -58,7 +58,7 @@ p{
     width: 10rem;
     position: relative;
     z-index: 30;
-    animation: butterfly2 55s infinite linear;
+    animation: butterfly2 35s infinite linear;
     transform: scaleX(-1);
     opacity: 0.8;
 }
