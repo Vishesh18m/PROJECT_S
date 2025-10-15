@@ -11,8 +11,8 @@ body{
 }
 
 .b1{
-    height: 15rem;
-    width: 15rem;
+    height: 22rem;
+    width: 22rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@ body{
 }
 
 .bubble0{
-    top: -15rem;
+    top: -17rem;
     left: -15rem;
     position: relative;
     transform: rotate(45deg);
@@ -34,7 +34,7 @@ body{
 
 .bubble1{
     top: 24rem;
-    left: -15rem;
+    left: -17rem;
     position: absolute;
     z-index: 5;
     opacity: 1;
@@ -45,7 +45,7 @@ body{
 
 .bubble2{
     top: 25rem;
-    left: -15rem;
+    left: -17.5rem;
     position: absolute;
     z-index: 5;
     opacity: 1;
@@ -74,7 +74,7 @@ body{
 
 .bubble5{
     top: -50rem;
-    left: 18rem;
+    left: 23rem;
     position: relative;
     transform: rotate(45deg);
     z-index: 1;
