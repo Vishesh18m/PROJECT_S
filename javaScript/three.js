@@ -10,7 +10,7 @@ let time = document.querySelector(".time");
 let timer = document.querySelector(".timer");
 
 let countdown = setInterval(()=>{
-    time.innerText = `${timeleft}`;
+    time.innerText = `wait - ${timeleft}`;
     timeleft--;
 
     if(timeleft<0){
