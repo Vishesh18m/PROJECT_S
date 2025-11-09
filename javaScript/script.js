@@ -8,6 +8,9 @@ function submit(){
     if(input.value=="Siya" || input.value=="siya" || input.value=="SIYA"){
         window.location.href = "./pageOne.html";
     }
+    else if(input.value=="Mayra" || input.value=="MAYRA" || input.value=="mayra"){
+        window.location.href = "./last.html";
+    }
     else{
         wrongName.classList.add("wrongName");
         wrongName.innerText=`Sorry this website is not made for ${input.value}.`;
