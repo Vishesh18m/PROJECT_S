@@ -1,5 +1,5 @@
 const audio = document.getElementById("bg-music");
-audio.volume = 0.3;
+audio.volume = 0.25;
 
 const audio2 = document.getElementById("firework-music");
 audio2.volume = 0.4;
