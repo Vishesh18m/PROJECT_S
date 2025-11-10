@@ -18,7 +18,6 @@ div{
 p{
     color: #c2b49b;
     line-height: 1.6;
-    opacity: 0.1;
 }
 
 .mayuu{
@@ -56,4 +55,8 @@ p{
 
 h1{
     color: antiquewhite;
+}
+
+.last{
+    opacity: 0.05;
 }
