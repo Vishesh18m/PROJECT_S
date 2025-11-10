@@ -52,4 +52,4 @@ function nextPage(){
 }
 
 const audio = document.getElementById("bg-music");
-audio.volume = 0.6;
+audio.volume = 0.4;
