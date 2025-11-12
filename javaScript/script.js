@@ -28,4 +28,16 @@ audio.volume = 0.5;
 document.addEventListener("click", () => {
     audio.muted = false;
     audio.play();
+    openFullscreen();
 }, { once: true });
+
+function openFullscreen() {
+    let elem = document.documentElement; // whole page
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { // Safari
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { // older IE/Edge
+      elem.msRequestFullscreen();
+    }
+}
