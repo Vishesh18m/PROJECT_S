@@ -53,3 +53,14 @@ function nextPage(){
 
 const audio = document.getElementById("bg-music");
 audio.volume = 0.4;
+
+function openFullscreen() {
+    let elem = document.documentElement; // whole page
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { // Safari
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { // older IE/Edge
+      elem.msRequestFullscreen();
+    }
+}
