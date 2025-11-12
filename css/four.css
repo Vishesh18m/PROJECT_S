@@ -2,8 +2,8 @@ html{
     overflow: hidden;
 }
 body{ 
-    height: 100vh;
-    background-color: black;
+    min-height:100vh;
+    background: linear-gradient(to bottom, #fff6f6 , #ff6de7);
     overflow: hidden;
     text-align: center;
     margin: 0;
