@@ -11,7 +11,9 @@ setTimeout(() => {
                 one();
                 setTimeout(() => {
                     one();
-                    last();
+                    setTimeout(() => {
+                        last();
+                    }, 35000);
                 }, 35000);  //25000
             }, 40000);  //30000
         }, 40000);  //30000
@@ -22,7 +24,7 @@ setTimeout(() => {
 
 
 
-function last(){
+function last() {
     let lastMsg = document.querySelector(".last-msg");
     lastMsg.classList.remove("hide");
 }
@@ -35,10 +37,10 @@ function one() {
         }
         count++;
     }
-    catch(err){
+    catch (err) {
         console.log(err);
     }
-    
+
 }
 
 

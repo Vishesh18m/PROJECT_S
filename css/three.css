@@ -55,7 +55,7 @@ body{
 
 .photo{
     height: 25rem;
-    width: 15rem;
+    width: 18rem;
     display: flex ;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +71,7 @@ body{
 
 .frame{
     height: 20rem;
-    width: 80%;
+    width: 60%;
     background-image: url("../images/siya/siya6.jpg");
     background-repeat: no-repeat;
     background-size: cover;
