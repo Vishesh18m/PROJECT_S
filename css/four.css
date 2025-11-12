@@ -3,8 +3,8 @@ html{
 }
 body{ 
     min-height:100vh;
-    background: linear-gradient(to bottom, #fff6f6 , #ff6de7);
-    overflow: hidden;
+    background: linear-gradient(to bottom, #4b0734 , #000000);
+    overflow: hidden !important;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -210,7 +210,7 @@ body{
 
 .wishes{
     position: absolute;
-    top: 17rem;
+    top: 15.5rem;
     height: 5rem;
     color: antiquewhite;
     opacity: 0.5;
@@ -225,3 +225,49 @@ body{
     height: 100vh;
     width: 100vh;
 }
+
+.last-msg{
+    height: 28rem;
+    width: 19rem;
+    background-image: url("../images/paper2.png");
+    background-size: cover;
+    position: absolute;
+    top: 10rem;
+    left: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(10deg);  
+    animation: lastmsg 30s 1 linear;
+}
+
+.line1{
+    height: 5rem;
+    width: 10rem;
+    position: relative;
+    top: -3rem;
+}
+
+.hide{
+    display: none;
+}
+
+
+@keyframes lastmsg {
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+

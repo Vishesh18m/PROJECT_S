@@ -11,6 +11,7 @@ setTimeout(() => {
                 one();
                 setTimeout(() => {
                     one();
+                    last();
                 }, 35000);  //25000
             }, 40000);  //30000
         }, 40000);  //30000
@@ -21,7 +22,10 @@ setTimeout(() => {
 
 
 
-
+function last(){
+    let lastMsg = document.querySelector(".last-msg");
+    lastMsg.classList.remove("hide");
+}
 
 
 function one() {
