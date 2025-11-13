@@ -169,7 +169,7 @@ p{
     background-image: url("../images/paper2.png");
     background-size: cover;
     position: absolute;
-    top: 10rem;
+    top: 20%;
     text-align: center;
     display: flex;
     flex-direction: column;

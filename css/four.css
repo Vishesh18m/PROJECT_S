@@ -4,10 +4,10 @@ html{
 body{ 
     min-height:100vh;
     background: linear-gradient(to bottom, #4b0734 , #000000);
-    overflow: hidden !important;
     text-align: center;
     margin: 0;
     padding: 0;
+    overflow: hidden !important;
 }
 
 .b1{
@@ -228,13 +228,16 @@ body{
 }
 
 .last-msg{
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    top: 20%;
+
     height: 28rem;
     width: 19rem;
     background-image: url("../images/paper2.png");
     background-size: cover;
-    position: absolute;
-    top: 10rem;
-    left: 3rem;
+    
     text-align: center;
     display: flex;
     flex-direction: column;

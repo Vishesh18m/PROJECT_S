@@ -111,16 +111,16 @@ body{
 
 .third{
     position: absolute;
-    height: 20rem;
-    width: 17rem;
+    height: 18rem;
+    width: 15.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 4;
     
-    bottom: 4rem;
-    right: -8rem;
+    bottom: 3rem;
+    right: -7.2rem;
 }
 
 .snowman{
@@ -203,22 +203,24 @@ body{
 
 
 .gameOver{
-    height: 20rem;
-    width: 25rem;
+    height: 18rem;
+    width: 23rem;
     background-image: url("../images/paper1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    z-index: 5;
     z-index: 9000;
-    top: 15rem;
+    top: 30%;
+    align-self: center;
+    justify-self: center;
     transform: rotate(20deg);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 1.5rem;
 }
 
 .line{
