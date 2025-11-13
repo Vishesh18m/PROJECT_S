@@ -24,21 +24,21 @@ body{
 .bubble0{
     top: -17rem;
     left: -15rem;
-    position: relative;
+    position: absolute;     /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
     transform: rotate(45deg);
     z-index: 1;
-    animation: bubble 43s 1 linear;  /* 30 */
+    animation: bubble 50s 1 linear;  /* 43 */
     opacity: 1;
     transform: rotate(0deg);
 }
 
 .bubble1{
-    top: 24rem;
-    left: -17.2rem;
     position: absolute;
+    top: 24rem;
+    left: -20rem;
     z-index: 5;
     opacity: 1;
-    animation: bubble1 65s 1 linear;  /* 35 */
+    animation: bubble1 68s 1 linear;  /* 65 */
     opacity: 1;
     transform: rotate(0deg);
 }
@@ -49,14 +49,15 @@ body{
     position: absolute;
     z-index: 5;
     opacity: 1;
-    animation: bubble2 30s 1 linear; /* 50 */
+    animation: bubble2 28s 1 linear; /* 50 */
     transform: rotate(0deg);
 }
 
 .bubble3{
     position: absolute;
-    top: -22rem;
-    left: 30rem;
+    top: -20rem;
+    /* right: 3rem; */
+    transform: translate(calc(100vw + 100px), 0);
     z-index: 2;
     opacity: 1;
     animation: bubble3 23s 1 linear; /* 20 */
@@ -64,21 +65,21 @@ body{
 }
 
 .bubble4{
-    position: relative;
-    top: 35rem;
-    left: 8rem;
+    position: absolute;
+    top: calc(100vh + 150px);
+    left: calc(50vw);
     opacity: 1;
     animation: bubble4 45s 1 linear; /* 30 */
     transform: rotate(0deg);
 }
 
 .bubble5{
-    top: -50rem;
-    left: 23rem;
-    position: relative;
+    top: -38rem;
+    left: calc(100vw + 90px);
+    position: absolute;   /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
     transform: rotate(45deg);
     z-index: 1;
-    animation: bubble5 60s 1 linear; /* 60 */
+    animation: bubble5 44s 1 linear; /* 60 */
     opacity: 1;
     transform: rotate(0deg);
    
@@ -86,12 +87,12 @@ body{
 }
 
 .bubble6{
-    top: 10rem;
-    right: 1rem;
     position: absolute;
+    top: 10rem;
+    left: calc(100vw + 30rem);
     z-index: 5;
     opacity: 1;
-    animation: bubble6 75s 1 linear; /* 70 */
+    animation: bubble6 75s 1 linear; 
     transform: rotate(0deg);
 }
 
@@ -101,8 +102,8 @@ body{
         width: 10rem;
     }
     to{
-        top: 35rem;
-        left: 35rem;
+        top: 43rem;
+        left: 38rem;
         transform: rotate(18deg);
     }
 }
@@ -111,11 +112,11 @@ body{
     from{
         height: 12rem;
         width: 12rem;
+        
     }
     to{
-        top: 35rem;
-        left: 28rem;
-        transform: rotate(-20deg);
+        top: 65vh;
+        left: calc(100vw + 100px);
     }
 }
 
@@ -133,11 +134,11 @@ body{
     from{
         height: 16rem;
         width: 16rem;
+        transform: translate(calc(100vw + 50px), 1rem);
     }
     to{
-        top: 47rem;
-        left: 2rem;
-        transform: rotate(20deg);
+        transform: translate(0, calc(100vh + 250px));
+        /* transform: rotate(20deg); */
     }
 }
 
@@ -147,7 +148,7 @@ body{
         width: 9rem;
     }
     to{
-        top: -15rem;
+        top: calc(12vh);
         left: -18rem;
         transform: rotate(20deg);
     }
@@ -157,8 +158,8 @@ body{
     from{
     }
     to{
-        top: 48rem;
-        left: -10rem;
+        top: calc(100vh + 8rem);
+        left: -7rem;
         transform: rotate(18deg);
     }
 }
@@ -169,8 +170,8 @@ body{
         width: 9rem;
     }
     to{
-        top: -3rem;
-        right: 45rem;
+        top: -7rem;
+        left : calc(-40vw - 8rem);
         transform: rotate(-20deg);
     }
 }
@@ -210,7 +211,7 @@ body{
 
 .wishes{
     position: absolute;
-    top: 15.5rem;
+    top: 13rem;
     height: 5rem;
     color: antiquewhite;
     opacity: 0.5;

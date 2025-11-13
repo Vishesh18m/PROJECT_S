@@ -31,8 +31,8 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    position: relative;
-    top: 43rem;
+    position: absolute;
+    bottom: 0rem;
     z-index: 50;
     overflow: hidden;
     pointer-events: none;
@@ -52,7 +52,7 @@ body{
 }
 
 .first{
-    position: relative;
+    position: absolute;
     height: 15rem;
     width: 12rem;
     display: flex;
@@ -60,9 +60,8 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 4;
-    top: 24rem;
-    right: 2rem;
-    
+    bottom: 4.1rem;
+    left: 0rem;
 }
 
 .tree{
@@ -83,16 +82,16 @@ body{
 }
 
 .second{
-    position: relative;
+    position: absolute;
     height: 15rem;
     width: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 4;
-    
-    top: -30rem;
+    z-index: 4;   
+    top: 1rem;
+    left: 1rem;
 }
 
 .cloud{
@@ -120,7 +119,7 @@ body{
     align-items: center;
     z-index: 4;
     
-    top: 20rem;
+    bottom: 4rem;
     right: -8rem;
 }
 
@@ -165,8 +164,8 @@ body{
     justify-content: center;
     cursor: pointer;
 
-    position: relative;
-    z-index: 1000;
+    position: absolute;
+    z-index: 1000 !important;
     
 }
 
